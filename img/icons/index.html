@@ -1,0 +1,794 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="">
+  <header class="">
+    <nav class="hover:bg-blue-100 hover:shadow-blue-100 hidden lg:block">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="flex justify-between items-center py-6 lg:py-8">
+          <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" fill="none" viewBox="0 0 60 20" preserveAspectRatio="xMinYMin meet" style="height: 20px; width: 60px;"><path fill="rgb(var(--neutral1000-rgb, 16, 16, 16))" d="M0 12.21C0 17.015 3.383 20 7.663 20c1.505 0 3.01-.358 4.107-1.164v-3.754a5.447 5.447 0 01-3.615 1.348c-2.224 0-3.998-1.566-3.998-4.209 0-2.642 1.766-4.179 3.998-4.179a5.323 5.323 0 013.633 1.337V5.618c-1.09-.825-2.6-1.14-4.105-1.14C3.383 4.48 0 7.464 0 12.21zM20.493 4.48c-4.361 0-7.407 3.185-7.407 7.731 0 4.548 3.038 7.79 7.406 7.79s7.431-3.215 7.431-7.79c0-4.574-3.033-7.731-7.431-7.731zm0 12.024c-2.083 0-3.242-1.785-3.242-4.285s1.159-4.264 3.242-4.264c2.082 0 3.237 1.785 3.237 4.264s-1.127 4.285-3.237 4.285zm19.36-10.46a5.271 5.271 0 00-1.746-1.166 5.346 5.346 0 00-2.072-.398c-4.397 0-6.883 3.496-6.883 7.731 0 4.287 2.486 7.79 6.883 7.79.71 0 1.412-.139 2.068-.407a5.387 5.387 0 001.75-1.158v1.226h4.194V0h-4.193v6.042zm0 8.642a3.168 3.168 0 01-1.187 1.248 3.252 3.252 0 01-1.675.457c-2.287 0-3.634-1.787-3.634-4.18 0-2.392 1.358-4.149 3.633-4.149a3.258 3.258 0 011.682.47c.505.306.915.745 1.182 1.266v4.888zM52.44 4.48c-2.024 0-3.961.542-5.063 1.224v3.572a7.65 7.65 0 014.137-1.224c2.14 0 3.386.91 3.386 2.36v.825c-.61-.429-2.085-.882-3.387-.882-3.325 0-5.84 1.931-5.84 4.774 0 3.072 2.515 4.805 5.582 4.805 1.646 0 3.151-.569 3.634-1.05v.796h4.049v-9.515c.01-3.61-2.362-5.685-6.498-5.685zm2.46 11.142c-.363.797-1.475 1.282-2.663 1.282-1.33 0-2.69-.542-2.69-1.82 0-1.28 1.36-1.819 2.69-1.819 1.188 0 2.285.482 2.663 1.28v1.077z"></path></svg>
+          </div>
+            <div class="menulist font-semibold flex items-center gap-x-2">
+              <a href="#" class="menu-item text-[16px] bg-gray-100 py-2 px-3 rounded-md flex items-center product-menu" data-menu-item="products">Product <span class="icon-chevron-down-menu ml-2"></span></a>
+              <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md flex items-center" data-menu-item="solutions">Solutions <span class="icon-chevron-down-menu ml-2"></span></a>
+              <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md flex items-center" data-menu-item="resources">Resources <span class="icon-chevron-down-menu ml-2"></span></a> 
+              <span class="font-thin px-2">|</span>
+              <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md ">Blog</a>
+              <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md">Pricing</a>
+            </div>
+            <div class="headerbutton ml-3">
+              <button class="text-[16px] font-semibold hover:bg-gray-100 bg-white border  py-[7px] px-3 rounded-md">Request a demo</button>
+              <button class="ml-3 text-[16px] font-semibol bg-black hover:bg-black hover: text-white border border-black hover:shadow-lg  py-[7px] px-4 rounded-md">Get started</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="megamenu mega-product border-b-2 bg-white" data-megamenu="products">
+        <div class="megamenu-content grid grid-flow-col mx-auto max-w-7xl px-8 py-8">
+          <div class="mega-left">
+            <h3 class="text-[20px] font-normal hover:underline cursor-pointer">Product</h3>
+            <div class="main-product flex space-x-4 w-full items-top mt-6">
+              <div class="mega-first flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">What is Coda?</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/1.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Docs & team hubs</span></a>
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/2.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Trackers & apps</span></a>
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/3.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Product updates</span></a>
+                </div>
+              </div>
+              <div class="mega-two flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">Inside Coda</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-3" href=""><span class="text-[16px] font-medium pl-2">Coda AI </span><span class="bg-[#dbeefa] px-[4px] py-[2px] text-[10px] rounded-md ml-2 text-[#2563EA] font-medium">FEATURED</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Consolidate your tools</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Pricing done differently</span></a>
+                </div>
+              </div>
+              <div class="mega-three flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">Platform</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-3" href=""><span class="text-[16px] font-medium pl-2">Packs</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Publishing</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-right ml-[150px] w-[200px] pl-10 border-l-2">
+            <h3 class="text-[20px] font-normal hover:underline cursor-pointer">Compare</h3>
+            <div class="mega-three">
+              <div class="megamenu-item mt-6">
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Notion</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Confluence</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Quip</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="megamenu mega-solution border-b-2 bg-white" data-megamenu="solutions">
+        <div class="megamenu-content grid grid-flow-col mx-auto max-w-7xl px-8 py-8">
+          <div class="mega-left">
+            <h3 class="text-[20px] font-normal hover:underline cursor-pointer">Solutions</h3>
+            <div class="main-product flex space-x-4 w-full items-top mt-6">
+              <div class="mega-first flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">What is Coda?</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/1.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Docs & team hubs</span></a>
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/2.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Trackers & apps</span></a>
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/3.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Product updates</span></a>
+                </div>
+              </div>
+              <div class="mega-two flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">Inside Coda</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-3" href=""><span class="text-[16px] font-medium pl-2">Coda AI </span><span class="bg-[#dbeefa] px-[4px] py-[2px] text-[10px] rounded-md ml-2 text-[#2563EA] font-medium">FEATURED</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Consolidate your tools</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Pricing done differently</span></a>
+                </div>
+              </div>
+              <div class="mega-three flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">Platform</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-3" href=""><span class="text-[16px] font-medium pl-2">Packs</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Publishing</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-right ml-[150px] w-[200px] pl-10 border-l-2">
+            <h3 class="text-[20px] font-normal hover:underline cursor-pointer">Case studies</h3>
+            <div class="mega-three">
+              <div class="megamenu-item mt-6">
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Notion</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Confluence</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Quip</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="megamenu mega-Resources border-b-2 bg-white" data-megamenu="resources">
+        <div class="megamenu-content grid grid-flow-col mx-auto max-w-7xl px-8 py-8">
+          <div class="mega-left">
+            <h3 class="text-[20px] font-normal hover:underline cursor-pointer">Resources</h3>
+            <div class="main-resources flex space-x-4 w-full items-top mt-6">
+              <div class="mega-first flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">What is Coda?</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/1.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Docs & team hubs</span></a>
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/2.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Trackers & apps</span></a>
+                  <a class="flex items-center px-4 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-2" href=""><img src="img/header/3.svg" alt="" height="40px" width="40px"><span class="text-[16px] font-medium pl-2">Product updates</span></a>
+                </div>
+              </div>
+              <div class="mega-two flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">Inside Coda</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-3" href=""><span class="text-[16px] font-medium pl-2">Coda AI </span><span class="bg-[#dbeefa] px-[4px] py-[2px] text-[10px] rounded-md ml-2 text-[#2563EA] font-medium">FEATURED</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Consolidate your tools</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Pricing done differently</span></a>
+                </div>
+              </div>
+              <div class="mega-three flex-auto min-w-0">
+                <h5 class="text-sm text-gray-400">Platform</h5>
+                <div class="megamenu-item">
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-3" href=""><span class="text-[16px] font-medium pl-2">Packs</span></a>
+                  <a class="flex items-center px-3 py-2 hover:bg-gray-100 -ml-5 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">Publishing</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-right ml-[150px] w-[200px] pl-10 border-l-2">
+            <h3 class="text-[20px] font-normal hover:underline cursor-pointer">Featured</h3>
+            <div class="mega-three">
+              <div class="megamenu-item mt-6">
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Notion</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Confluence</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs Quip</span></a>
+                <a class="flex items-center px-3 py-3 hover:bg-gray-100 -ml-4 rounded-md mt-1" href=""><span class="text-[16px] font-medium pl-2">vs demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-header lg:hidden block">
+      <div class="flex justify-between items-center mx-auto px-4 py-6">
+        
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" fill="none" viewBox="0 0 60 20" preserveAspectRatio="xMinYMin meet" style="height: 20px; width: 60px;"><path fill="rgb(var(--neutral1000-rgb, 16, 16, 16))" d="M0 12.21C0 17.015 3.383 20 7.663 20c1.505 0 3.01-.358 4.107-1.164v-3.754a5.447 5.447 0 01-3.615 1.348c-2.224 0-3.998-1.566-3.998-4.209 0-2.642 1.766-4.179 3.998-4.179a5.323 5.323 0 013.633 1.337V5.618c-1.09-.825-2.6-1.14-4.105-1.14C3.383 4.48 0 7.464 0 12.21zM20.493 4.48c-4.361 0-7.407 3.185-7.407 7.731 0 4.548 3.038 7.79 7.406 7.79s7.431-3.215 7.431-7.79c0-4.574-3.033-7.731-7.431-7.731zm0 12.024c-2.083 0-3.242-1.785-3.242-4.285s1.159-4.264 3.242-4.264c2.082 0 3.237 1.785 3.237 4.264s-1.127 4.285-3.237 4.285zm19.36-10.46a5.271 5.271 0 00-1.746-1.166 5.346 5.346 0 00-2.072-.398c-4.397 0-6.883 3.496-6.883 7.731 0 4.287 2.486 7.79 6.883 7.79.71 0 1.412-.139 2.068-.407a5.387 5.387 0 001.75-1.158v1.226h4.194V0h-4.193v6.042zm0 8.642a3.168 3.168 0 01-1.187 1.248 3.252 3.252 0 01-1.675.457c-2.287 0-3.634-1.787-3.634-4.18 0-2.392 1.358-4.149 3.633-4.149a3.258 3.258 0 011.682.47c.505.306.915.745 1.182 1.266v4.888zM52.44 4.48c-2.024 0-3.961.542-5.063 1.224v3.572a7.65 7.65 0 014.137-1.224c2.14 0 3.386.91 3.386 2.36v.825c-.61-.429-2.085-.882-3.387-.882-3.325 0-5.84 1.931-5.84 4.774 0 3.072 2.515 4.805 5.582 4.805 1.646 0 3.151-.569 3.634-1.05v.796h4.049v-9.515c.01-3.61-2.362-5.685-6.498-5.685zm2.46 11.142c-.363.797-1.475 1.282-2.663 1.282-1.33 0-2.69-.542-2.69-1.82 0-1.28 1.36-1.819 2.69-1.819 1.188 0 2.285.482 2.663 1.28v1.077z"></path></svg>
+        </div>
+        
+        <div class="navitems hidden">
+          <div class="menulist font-semibold flex items-center gap-x-2">
+            <a href="#" class="menu-item text-[16px] bg-gray-100 py-2 px-3 rounded-md flex items-center product-menu" data-menu-item="products">Product <span class="icon-chevron-down-menu ml-2"></span></a>
+            <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md flex items-center" data-menu-item="solutions">Solutions <span class="icon-chevron-down-menu ml-2"></span></a>
+            <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md flex items-center" data-menu-item="resources">Resources <span class="icon-chevron-down-menu ml-2"></span></a> 
+            <span class="font-thin px-2">|</span>
+            <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md ">Blog</a>
+            <a href="#" class="menu-item text-[16px] hover:bg-gray-100 py-2 px-3 rounded-md">Pricing</a>
+          </div>
+        </div>
+        <button class="nav-v2-burger relative w-10 h-6 flex flex-col justify-between items-center" data-nav-v2-burger="" aria-label="Toggle mobile menu">
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-1/2 h-0.5 bg-black"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="h-auto">
+    <div class="px-4 pt-32 pb-16 mx-auto text-center xl:container xl:px-0">
+        <h1 class="max-w-4xl mx-auto font-sans text-5xl font-medium tracking-normal font-display text-slate-900 sm:text-7xl">
+          Accounting <span class="relative text-blue-600 whitespace-nowrap"><svg aria-hidden="true" viewBox="0 0 418 42" class="absolute left-0 top-2/3 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path></svg><span class="relative">made simple</span></span><br> for small businesses.
+        </h1>
+        <p class="max-w-xl mx-auto mt-6 text-lg font-light tracking-tight text-slate-700">Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.</p>
+        <div class="flex justify-center mt-10 space-x-5">
+          <button class="px-4 py-2 text-sm text-white rounded-full bg-slate-900">Get 6 months free</button>
+          <button class="inline-flex items-center px-4 py-2 text-sm border rounded-full border-slate-300 hover:border-gray-400"> <svg aria-hidden="true" class="flex-none w-3 h-3 fill-blue-600 group-active:fill-current"><path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z"></path></svg><span class="ml-3">Watch Video<span></button>
+        </div>
+
+        <div class="mt-20 lg:mt-32">
+          <p class="text-slate-900">Trusted by these six companies so far</p>
+          <ul class="flex justify-center gap-12 mt-6 xl:flex-row item-center ">
+            <li>
+              <ul class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
+                <li class="flex"><img src="img/1.svg" alt=""></li>
+                <li class="flex"><img src="img/2.svg" alt=""></li>
+                <li class="flex"><img src="img/3.svg" alt=""></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
+                <li class="flex"><img src="img/4.svg" alt=""></li>
+                <li class="flex"><img src="img/5.svg" alt=""></li>
+                <li class="flex"><img src="img/6.svg" alt=""></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="everything pb-[120px] md:pb-0 bg-[url('/img/bg.jpg')] bg-cover overflow-hidden ">
+      <div class="py-20 mx-auto max-w-7xl lg:py-32">
+        <div class="px-4 mb-8 text-b lg:px-0 ">
+          <h3 class="text-3xl text-left text-white lg:text-5xl md:text-center">
+            Everything you need to run your books.
+          </h3>
+          <p class="pt-2 mx-auto mt-4 text-lg text-left text-blue-100 lg:text-center">Well everything you need if you aren’t that picky about minor details like tax compliance.</p>
+        </div>
+      <div class="grid items-center grid-cols-1 pt-10 mx-auto rounded-none lg:grid-cols-12 md:text-center bg-none lg:bg-white/0 md:bg-white/10 bg-white/10 lg:pt-0 lg:max-w-full md:max-w-3xl md:rounded-lg">
+        <div class="flex mb-4 -mx-4 overflow-x-auto md:justify-center lg:col-span-4 md:mb-6 md:px-4 md:overflow-visible ">
+          <div class="flex mb-3 -mr-4 lg:flex-col md:mb-0 lg:col-span-5 tab whitespace-nowrap md:whitespace-normal ">
+            <button onclick="openCity(event, 'Payroll')" class="flex flex-col items-start px-4 cursor-pointer tablinks hover:rounded-full hover:lg:rounded-l-xl hover:lg:rounded-r-none hover:bg-white/5 hover:lg:ring-1 py1 md:p-6 ml-7 md:ml-0" id="defaultOpen">
+              <div class="max-w-xl text-white rounded-full lg:rounded-l-xl lg:rounded-r-none " id="payroll">
+                  <h3 class="text-lg ">Payroll</h3>
+                  <p class="hidden mt-2 text-sm font-thin lg:block ">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+              </div>
+            </button>
+            <button onclick="openCity(event, 'Expenses')" class="flex flex-col items-start px-4 cursor-pointer tablinks hover:rounded-full hover:lg:rounded-l-xl hover:lg:rounded-r-none hover:bg-white/5 hover:lg:ring-1 py1 md:p-6 ">
+              <div  class="max-w-xl text-white rounded-full lg:rounded-l-xl lg:rounded-r-none " id="expenses">
+                <h3 class="text-lg ">Claim expenses</h3>
+                <p class="hidden mt-2 text-sm font-thin lg:block">All of your receipts organized into one place, as long as you don't mind typing in the data by hand.</p>
+              </div>
+            </button>
+            <button onclick="openCity(event, 'Vat')" class="flex flex-col items-start px-4 cursor-pointer tablinks hover:rounded-full hover:lg:rounded-l-xl hover:lg:rounded-r-none hover:bg-white/5 hover:lg:ring-1 py1 md:p-6">
+              <div class="max-w-xl text-white rounded-full lg:rounded-l-xl lg:rounded-r-none " id="vat">
+                <h3 class="text-lg">VAT handling</h3>
+                <p class="hidden mt-2 text-sm font-thin lg:block">We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.</p>
+              </div>
+            </button>
+            <button onclick="openCity(event, 'Reporting')" class="flex flex-col items-start px-4 mr-6 cursor-pointer tablinks hover:rounded-full hover:lg:rounded-l-xl hover:lg:rounded-r-none hover:bg-white/5 hover:lg:ring-1 py1 md:p-6 md:ml-0 md:mr-0">
+              <div class="max-w-xl text-white rounded-full lg:rounded-l-xl lg:rounded-r-none " id="vat">
+                <h3 class="text-lg">Reporting</h3>
+                <p class="hidden mt-2 text-sm font-thin lg:block">Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</p>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="lg:col-span-7">
+          <div class="tab-panel lg:mt-6 mx-4 md:mx-0 -mb-[150px] md:mb-0">
+            <div class="md-[45rem] sm:w-[100%] lg:w-[67.8125rem] md:w-full overflow-hidden rounded-xl tabcontent" id="Payroll">
+              <p class="block max-w-xl pb-6 mx-auto mt-2 text-lg font-thin text-white md:pb-6 md:block lg:hidden">Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</p>
+              <img src="img/tabs/payroll.webp" alt="" class="w-full rounded-xl md:px-0">
+            </div>
+            <div class="md-[45rem] sm:w-[100%]] lg:w-[67.8125rem] md:w-full overflow-hidden rounded-xl tabcontent" id="Expenses">
+              <p class="block max-w-xl pb-6 mx-auto mt-2 text-lg font-thin text-white md:pb-6 md:block lg:hidden">All of your receipts organized into one place, as long as you don't mind typing in the data by hand.</p>
+              <img src="img/tabs/expenses.webp" alt="" class="w-full rounded-xl md:px-0">
+            </div>
+            <div class="md-[45rem] sm:w-[100%] lg:w-[67.8125rem] md:w-full overflow-hidden rounded-xl tabcontent" id="Vat">
+              <p class="block max-w-xl pb-6 mx-auto mt-2 text-lg font-thin text-white md:pb-6 md:block lg:hidden">We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.</p>
+              <img src="img/tabs/vat-returns.webp" alt="" class="w-full rounded-xl md:px-0">
+            </div>
+            <div class="md-[45rem] sm:w-[100%] lg:w-[67.8125rem] md:w-full overflow-hidden rounded-xl tabcontent" id="Reporting">
+              <p class="block max-w-xl pb-6 mx-auto mt-2 text-lg font-thin text-white md:pb-6 md:block lg:hidden">Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</p>
+              <img src="img/tabs/reporting.webp" alt="" class="w-full rounded-xl md:px-0">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="px-0 py-20 mx-auto lg:py-32 md:px-0 lg:px-8 max-w-7xl">
+      <div class="h-auto px-4 mb-16 text-left bg-center bg-cover md:text-center md:px-0 lg:mb-0">
+        <h3 class="text-3xl lg:text-[40px] text-black ">
+          Simplify everyday business tasks.
+        </h3>
+        <p class="max-w-2xl mx-auto mt-4 text-lg font-light text-slate-700">Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead.</p>
+      </div>
+
+      <div class="mt-10 tabletss">
+        <div class="block tablinklist lg:hidden">
+          <div class="px-4 mx-2 text-left tabLinks md:mx-12 md:px-0">
+            <div class="bg-blue-500 rounded-lg icons w-9">
+             <svg aria-hidden="true" class="h-9 w-9" fill="none"><defs><linearGradient id=":Rarenla:" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse"><stop offset=".194" stop-color="#fff"></stop><stop offset="1" stop-color="#6692F1"></stop></linearGradient></defs><path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#:Rarenla:)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            <h3 class="mt-6 text-sm font-light text-blue-500"> Reporting</h3>
+            <p class="mt-2 text-xl font-display text-slate-900">Stay on top of things with always up-to-date reporting features.</p>
+            <p class="mt-4 text-sm text-slate-600">We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.</p>
+          </div>
+          <div class="px-4 pt-6 pb-6 mt-16 img-tablet bg-slate-300">
+            <img class="w-full -mt-16 rounded-lg ring-gray-200" src="img/tabs/11.webp" alt="">
+          </div>
+          <div class="px-4 mx-2 mt-12 text-left tabLinks md:mx-12 md:px-0">
+            <div class="bg-blue-500 rounded-lg icons w-9">
+            <svg aria-hidden="true" class="h-9 w-9" fill="none"><path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path></svg>            </div>
+            <h3 class="mt-6 text-sm font-light text-blue-500">Inventory</h3>
+            <p class="mt-2 text-xl font-display text-slate-900">Never lose track of what’s in stock with accurate inventory tracking.</p>
+            <p class="mt-4 text-sm text-slate-600">We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.</p>
+          </div>
+          <div class="px-4 pt-6 pb-6 mt-16 img-tablet bg-slate-300">
+            <img class="w-full -mt-16 rounded-lg ring-gray-200" src="img/tabs/22.webp" alt="">
+          </div>
+          <div class="px-4 mx-2 mt-12 text-left tabLinks md:mx-12 md:px-0">
+            <div class="bg-blue-500 rounded-lg icons w-9">
+              <svg aria-hidden="true" class="h-9 w-9" fill="none"><path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path><path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path></svg>            
+            </div>
+            <h3 class="mt-6 text-sm font-light text-blue-500">Contacts</h3>
+            <p class="mt-2 text-xl font-display text-slate-900">Organize all of your contacts, service providers, and invoices in one place.</p>
+            <p class="mt-4 text-sm text-slate-600">This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.</p>
+          </div>
+          <div class="px-4 pt-6 pb-6 mt-16 img-tablet bg-slate-300">
+            <img class="w-full -mt-16 rounded-lg ring-gray-200" src="img/tabs/33.webp" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden mt-16 tabsecond lg:block">
+        <div class="grid grid-cols-3 tablinklist gap-x-12">
+          <button onclick="openTabs(event, 'Reportings')" class="text-left reporting tabLinks" id="defaultTabOpen">
+            <div class="rounded-lg icons w-9 bg-slate-600">
+              <svg aria-hidden="true" class="h-9 w-9" fill="none"><defs><linearGradient id=":R2menla:" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse"><stop offset=".194" stop-color="#fff"></stop><stop offset="1" stop-color="#6692F1"></stop></linearGradient></defs><path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#:R2menla:)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>            </div>
+            <h3 class="mt-6 text-sm font-light text-slate-600"> Reporting</h3>
+            <p class="mt-2 text-xl font-display text-slate-900">Stay on top of things with always up-to-date reporting features.</p>
+            <p class="mt-4 text-sm font-light text-slate-600">We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.</p>
+          </button>
+          <button onclick="openTabs(event, 'Inventorys')" class="text-left tabLinks reporting">
+            <div class="rounded-lg icons w-9 bg-slate-500">
+              <svg aria-hidden="true" class="h-9 w-9" fill="none"><path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path><path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path></svg>            </div>
+            <h3 class="mt-6 text-sm font-light text-slate-500">Inventory</h3>
+            <p class="mt-2 text-xl font-display text-slate-900">Never lose track of what’s in stock with accurate inventory tracking.</p>
+            <p class="mt-4 text-sm font-light text-slate-600">We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.</p>
+          </button>
+          <button onclick="openTabs(event, 'Contactss')" class="text-left tabLinks reporting">
+            <div class="rounded-lg icons w-9 bg-slate-500">
+              <svg aria-hidden="true" class="h-9 w-9" fill="none"><path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path><path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path></svg>            
+            </div>
+              <h3 class="mt-6 text-sm font-light text-slate-500">Contacts</h3>
+            <p class="mt-2 text-xl font-display text-slate-900">Organize all of your contacts, service providers, and invoices in one place.</p>
+            <p class="mt-4 text-sm font-light text-slate-600">This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.</p>
+          </button>
+        </div>
+        <div class="tab-panell">
+          <div class="py-16 mt-20 overflow-hidden rounded-3xl bg-slate-200 px-14 xl:px-16">
+            <div class="overflow-hidden ">
+              <div class="grid grid-cols-8 gap-0 -mx-6 overflow-hidden tablistcontent">
+                <div class="tabContent ml-6 w-[52.75rem] off-screen rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10" id="Reportings">
+                  <img class="w-full rounded-xl" src="img/tabs/11.webp" alt="">
+                </div>
+                <div class="tabContent w-[52.75rem] off-screen rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10" id="Inventorys">
+                  <img class="w-full rounded-xl" src="img/tabs/22.webp" alt="">
+                </div>
+                <div class="tabContent -ml-6 w-[52.75rem] off-screen rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10" id="Contactss">
+                  <img class="w-full rounded-xl" src="img/tabs/33.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <section>
+    <div class="bg-[url('/img/bg.jpg')] h-auto py-20 lg:py-32 text-center bg-cover bg-center px-4 xl:px-0">
+      <h3 class="text-3xl lg:text-[2.5rem] text-white">
+        Get started today
+      </h3>
+      <p class="max-w-lg mx-auto mt-4 text-lg font-light text-white">It’s time to take control of your books. Buy our software so you can feel like you’re doing something productive.</p>
+      <button class="px-4 py-2 mt-6 text-sm font-semibold text-black bg-white rounded-full">Get 6 months free</button>
+    </div>
+  </section>
+
+  <section class="bg-slate-50">
+    <div class="px-4 py-20 mx-auto mx-w-7xl lg:py-32 xl:px-0 max-w-7xl">
+      <div class="h-auto text-left bg-center bg-cover md:text-center">
+        <h3 class="text-3xl lg:text-[2.5rem] text-black">
+          Loved by businesses worldwide.
+        </h3>
+        <p class="max-w-2xl mx-auto mt-4 text-lg font-light text-slate-700">Our software is so simple that people can’t help but fall in love with it. Simplicity is easy when you just skip tons of mission-critical features.</p>
+      
+      </div>
+      <div class="flex flex-col gap-6 pt-20 lg:flex-row md:flex-col md:mx-8">
+        <div class="flex flex-col gap-6">
+          <div class="bg-white shadow-xl test rounded-xl p-7">
+            <p class="text-lg font-light">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.</p>
+            <div class="flex justify-between pt-6 mt-6 border-t border-gray-100 info">
+              <div class="info-text">
+                <p class="font-medium">Sheryl Berge</p>
+                <p class="font-light">CEO at Lynch LLC</p>
+              </div>
+              <div class="info-img">
+                <img class="rounded-full" src="img/avatar-1.webp" width="50px" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-xl test rounded-xl p-7 ">
+            <p class="text-lg font-light">The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.</p>
+            <div class="flex justify-between pt-6 mt-6 border-t border-gray-100 info">
+              <div class="info-text">
+                <p class="font-medium">Sheryl Berge</p>
+                <p class="font-light">CEO at Lynch LLC</p>
+              </div>
+              <div class="info-img">
+                <img class="rounded-full" src="img/avatar-1.webp" width="50px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <div class="bg-white shadow-xl test rounded-xl p-7">
+            <p class="text-lg font-light">The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.</p>
+            <div class="flex justify-between pt-6 mt-6 border-t border-gray-100 info">
+              <div class="info-text">
+                <p class="font-medium">Sheryl Berge</p>
+                <p class="font-light">CEO at Lynch LLC</p>
+              </div>
+              <div class="info-img">
+                <img class="rounded-full" src="img/avatar-1.webp" width="50px" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-xl test rounded-xl p-7 ">
+            <p class="text-lg font-light">The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.</p>
+            <div class="flex justify-between pt-6 mt-6 border-t border-gray-100 info">
+              <div class="info-text">
+                <p class="font-medium">Sheryl Berge</p>
+                <p class="font-light">CEO at Lynch LLC</p>
+              </div>
+              <div class="info-img">
+                <img class="rounded-full" src="img/avatar-1.webp" width="50px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <div class="bg-white shadow-xl test rounded-xl p-7">
+            <p class="text-lg font-light">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.</p>
+            <div class="flex justify-between pt-6 mt-6 border-t border-gray-100 info">
+              <div class="info-text">
+                <p class="font-medium">Sheryl Berge</p>
+                <p class="font-light">CEO at Lynch LLC</p>
+              </div>
+              <div class="info-img">
+                <img class="rounded-full" src="img/avatar-1.webp" width="50px" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-xl test rounded-xl p-7 ">
+            <p class="text-lg font-light">The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.</p>
+            <div class="flex justify-between pt-6 mt-6 border-t border-gray-100 info">
+              <div class="info-text">
+                <p class="font-medium">Sheryl Berge</p>
+                <p class="font-light">CEO at Lynch LLC</p>
+              </div>
+              <div class="info-img">
+                <img class="rounded-full" src="img/avatar-1.webp" width="50px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-slate-900">
+      <div class="px-4 py-20 mx-auto max-w-7xl lg:py-32">
+        <h3 class="text-3xl tracking-tight text-left text-white font-display sm:text-4xl md:text-center">
+          <span class="relative whitespace-nowrap">
+          <svg aria-hidden="true" viewBox="0 0 281 40" preserveAspectRatio="none" class="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400 z-0"><path fill-rule="evenodd" clip-rule="evenodd" d="M240.172 22.994c-8.007 1.246-15.477 2.23-31.26 4.114-18.506 2.21-26.323 2.977-34.487 3.386-2.971.149-3.727.324-6.566 1.523-15.124 6.388-43.775 9.404-69.425 7.31-26.207-2.14-50.986-7.103-78-15.624C10.912 20.7.988 16.143.734 14.657c-.066-.381.043-.344 1.324.456 10.423 6.506 49.649 16.322 77.8 19.468 23.708 2.65 38.249 2.95 55.821 1.156 9.407-.962 24.451-3.773 25.101-4.692.074-.104.053-.155-.058-.135-1.062.195-13.863-.271-18.848-.687-16.681-1.389-28.722-4.345-38.142-9.364-15.294-8.15-7.298-19.232 14.802-20.514 16.095-.934 32.793 1.517 47.423 6.96 13.524 5.033 17.942 12.326 11.463 18.922l-.859.874.697-.006c2.681-.026 15.304-1.302 29.208-2.953 25.845-3.07 35.659-4.519 54.027-7.978 9.863-1.858 11.021-2.048 13.055-2.145a61.901 61.901 0 0 0 4.506-.417c1.891-.259 2.151-.267 1.543-.047-.402.145-2.33.913-4.285 1.707-4.635 1.882-5.202 2.07-8.736 2.903-3.414.805-19.773 3.797-26.404 4.829Zm40.321-9.93c.1-.066.231-.085.29-.041.059.043-.024.096-.183.119-.177.024-.219-.007-.107-.079ZM172.299 26.22c9.364-6.058 5.161-12.039-12.304-17.51-11.656-3.653-23.145-5.47-35.243-5.576-22.552-.198-33.577 7.462-21.321 14.814 12.012 7.205 32.994 10.557 61.531 9.831 4.563-.116 5.372-.288 7.337-1.559Z"></path></svg>
+          <span class="relative">Simple pricing,</span>
+          </span>
+          for everyone.
+        </h3>
+        <p class="max-w-3xl mx-auto mt-4 text-lg text-left text-slate-500 md:text-center">It doesn’t matter what size your business is, our software won’t work well for you.</p>
+
+        <div class="flex flex-col justify-between gap-4 mt-10 lg:flex-row md:mx-14 lg:mx-0 sm:mx-0 price-tables md:gap-10">
+          <div class="flex-1 p-8 price starter">
+            <h3 class="text-5xl font-light text-white lg:text-4xl lg:font-normal">$9</h3>
+            <p class="mt-8 text-lg text-white">Starter</p>
+            <p class="mt-4 text-slate-500">Good for anyone who is self-employed and just getting started.</p>
+            <button class="inline-flex justify-center w-full px-4 py-2 mt-8 text-white border rounded-full border-slate-700 hover:border-slate-400">Get Started</button>
+            <ul role="list" class="flex flex-col order-last mt-10 text-sm gap-y-3 text-slate-200">
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Send 10 quotes and invoices</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Connect up to 2 bank accounts</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Track up to 15 expenses per month</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Manual payroll support</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Export up to 3 reports</span></li></ul>
+          </div>
+          <div class="flex-1 order-first p-8 bg-blue-600 price small-b lg:order-none rounded-xl">
+            <h3 class="text-5xl font-light text-white lg:text-4xl lg:font-normal">$15</h3>
+            
+            <p class="mt-8 text-lg text-white">Small business</p>
+            <p class="mt-4 text-white max-w-60">Perfect for small / medium sized businesses.</p>
+            <button class="inline-flex justify-center w-full px-4 py-2 mt-8 bg-white border rounded-full text-slate-900">Get Started</button>
+            <ul role="list" class="flex flex-col order-last mt-10 text-sm gap-y-3 text-slate-200">
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Send 10 quotes and invoices</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Connect up to 2 bank accounts</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Track up to 15 expenses per month</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Manual payroll support</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Export up to 3 reports</span></li></ul>
+          </div>
+          <div class="flex-1 p-8 pt-0 price enterprice lg:pt-8">
+            <h3 class="text-5xl font-light text-white lg:text-4xl lg:font-normal">$39</h3>
+            <p class="mt-8 text-lg text-white">Enterprise</p>
+            <p class="mt-4 text-slate-500 max-w-60">For even the biggest enterprise companies.</p>
+            <button class="inline-flex justify-center w-full px-4 py-2 mt-8 text-white border rounded-full border-slate-700 hover:border-slate-400">Get Started</button>
+            <ul role="list" class="flex flex-col order-last mt-10 text-sm gap-y-3 text-slate-200">
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Send 10 quotes and invoices</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Connect up to 2 bank accounts</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Track up to 15 expenses per month</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Manual payroll support</span></li>
+              <li class="flex"><svg aria-hidden="true" class="flex-none w-6 h-6 fill-current stroke-current text-slate-400"><path d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z" stroke-width="0"></path><circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg><span class="ml-4">Export up to 3 reports</span></li></ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class=" py-20 lg:py-32 bg-[url('/img/bg-3.jpg')] h-auto bg-cover bg-center">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="h-auto text-left bg-cover ">
+          <h3 class="text-3xl text-black sm:text-4xl">
+            Frequently asked questions
+          </h3>
+          <p class="max-w-lg mt-4 text-lg text-slate-700">If you can’t find what you’re looking for, email our support team and if you’re lucky someone will get back to you.</p>
+        </div>
+        <div class="mt-16 list-seection">
+          <ul>
+            <li class="flex flex-col sm:flex-row gap-x-8 gap-y-8">
+              <ul class="flex flex-col flex-1 gap-y-8">
+                <li>
+                  <h3 class="text-lg text-slate-900">Does TaxPal handle VAT?</h3>
+                  <p class="mt-4 text-sm text-slate-700">Well no, but if you move your company offshore you can probably ignore it.</p>
+                </li>
+                <li>
+                  <h3 class="text-lg text-slate-900">Can I pay for my subscription via purchase order?</h3>
+                  <p class="mt-4 text-sm text-slate-700">Absolutely, we are happy to take your money in all forms.</p>
+                </li>
+                <li>
+                  <h3 class="text-lg text-slate-900">How do I apply for a job at TaxPal?</h3>
+                  <p class="mt-4 text-sm text-slate-700">We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.</p>
+                </li>
+              </ul>
+
+              <ul class="flex flex-col flex-1 gap-y-8">
+                <li>
+                  <h3 class="text-lg text-slate-900">What was that testimonial about tax fraud all about?</h3>
+                  <p class="mt-4 text-sm text-slate-700">TaxPal is just a software application, ultimately your books are your responsibility.</p>
+                </li>
+                <li>
+                  <h3 class="text-lg text-slate-900">TaxPal sounds horrible but why do I still feel compelled to purchase?</h3>
+                  <p class="mt-4 text-sm text-slate-700">This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.</p>
+                </li>
+                <li>
+                  <h3 class="text-lg text-slate-900">I found other companies called TaxPal, are you sure you can use this name?</h3>
+                  <p class="mt-4 text-sm text-slate-700">We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.</p>
+                </li>
+              </ul>
+
+              <ul class="flex flex-col flex-1 gap-y-8">
+                <li>
+                  <h3 class="text-lg text-slate-900">Does TaxPal handle VAT?</h3>
+                  <p class="mt-4 text-sm text-slate-700">Well no, but if you move your company offshore you can probably ignore it.</p>
+                </li>
+                <li>
+                  <h3 class="text-lg text-slate-900">Can I pay for my subscription via purchase order?</h3>
+                  <p class="mt-4 text-sm text-slate-700">Absolutely, we are happy to take your money in all forms.</p>
+                </li>
+                <li>
+                  <h3 class="text-lg text-slate-900">How do I apply for a job at TaxPal?</h3>
+                  <p class="mt-4 text-sm text-slate-700">We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+<script src="header.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+<footer>
+  <section>
+    <div class="h-auto px-4 pt-16 pb-6 border-t-2 border-gray-400 mainfooter">
+      <div class="pb-16 mx-auto border-b-2 border-gray-400 max-w-7xl">
+        <div class="flex flex-col justify-between align-top lg:flex-row gap-x-10">
+          <div class="flex flex-col justify-between logo w-44">
+            <div class="topsection">
+              <img class="w-[150px] lg:w-[130px]" src="img/footer/logo.svg" alt="logo">
+              <p class="text-[11px] font-light font-inter pt-3  hidden lg:block">Wir befähigen alle, visuell zu kommunizieren. </p>
+              <div class="hidden mt-6 icons-footer lg:block">
+                <ul class="flex items-center visme-social-footer gap-x-2">
+                  <li><a href="#" class="youtube" target="_blank" ><img class="w-5 h-5 skip-lazy a3-notlazy" src="img/icons/y.svg"  loading="lazy" decoding="async"></a></li>
+                  <li><a href="#" class="facebook" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/fb.svg"  loading="lazy" decoding="async"></a></li>
+                  <li><a href="#" class="twitter" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/ln.svg"  alt="LinkedIn" loading="lazy" decoding="async"></a></li>
+                  <li><a href="#" class="twitter" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/tx.svg" loading="lazy" decoding="async"></a></li>
+                  <li><a href="#" class="google" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/inst.svg"loading="lazy" decoding="async"></a></li>
+                  <li><a href="#" class="google" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/pin.svg" loading="lazy" decoding="async"></a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="hidden bottomsection lg:block">
+              <div class="flex gap-x-3">
+                <img src="img/footer/capterra-reviews.png" alt="" class="w-[60px] h-[40px]">
+                <img src="img/footer/badge.svg" alt="" class="w-[53px]">
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 list-one lg:mt-0 tab-wrapper">
+            <h5 class="tab-toggle text-[13px] lg:text-[11px] text-[#bfbebe] mb-4 uppercase font-lexend cursor-pointer lg:cursor-text flex items-center justify-between">Erstellen <span class="icon-chevron-down"></span></h5>
+            <ul class="text-gray-800 text-[13px] lg:text[11px] font-light font-inter tab-content hidden lg:block">
+              <li class="mb-3"><a href="#" title="Präsentationen">Präsentationen</a></li>
+              <li class="mb-3"><a href="#" title="Infografiken">Infografiken</a></li>
+              <li class="mb-3"><a href="#" title="Drucksachen">Drucksachen</a></li>
+              <li class="mb-3"><a href="#" title="Dokumente">Dokumente</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken für sozialen Medien">Grafiken für sozialen Medien</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken">Grafiken</a></li>
+              <li class="mb-3"><a href="#" title="Videos">Videos</a></li>
+              </ul>
+          </div>
+
+          <div class="mt-2 list-two lg:mt-0 tab-wrapper">
+            <h5 class="tab-toggle text-[13px] lg:text-[11px] text-[#bfbebe] mb-4 uppercase font-lexend cursor-pointer lg:cursor-text flex items-center justify-between">Anwendungsfälle <span class="icon-chevron-down"></span></h5>
+            <ul class="text-gray-800 text-[13px] lg:text[11px] font-light font-inter hidden tab-content lg:block">
+              <li class="mb-3"><a href="#" title="Präsentationen">Marketer</a></li>
+              <li class="mb-3"><a href="#" title="Infografiken">Verkaufsgruppen</a></li>
+              <li class="mb-3"><a href="#" title="Drucksachen">Personalabteilung</a></li>
+              <li class="mb-3"><a href="#" title="Dokumente">Ausbildung und Training</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken für sozialen Medien">Gemeinnützige Gesellschaften</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken">Ausbildung</a></li>
+              <li class="mb-3"><a href="#" title="Videos">Unternehmungen</a></li>
+              </ul>
+          </div>
+
+          <div class="mt-2 list-three lg:mt-0 tab-wrapper">
+            <h5 class="tab-toggle text-[13px] lg:text-[11px] text-[#bfbebe] mb-4 uppercase font-lexend cursor-pointer lg:cursor-text flex items-center justify-between">Ressourcen <span class="icon-chevron-down"></span></h5>
+            <ul class="text-gray-800 text-[13px] lg:text[11px] font-light font-inter hidden lg:block tab-content relative">
+              <li class="mb-3"><a href="#" title="Präsentationen">Blog</a></li>
+              <li class="mb-3"><a href="#" title="Infografiken">Webinare</a></li>
+              <li class="mb-3"><a href="#" title="Drucksachen">Videoanleitungen</a></li>
+              <li class="mb-3"><a href="#" title="Dokumente">E-Books</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken für sozialen Medien">Online Kurse</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken">Vorlagen</a></li>
+              <li class="mb-3"><a href="#" title="Videos">Design-Galerie</a></li>
+              </ul>
+          </div>
+
+          <div class="mt-2 list-five lg:mt-0 tab-wrapper">
+            <h5 class="tab-toggle text-[13px] lg:text-[11px] text-[#bfbebe] mb-4 uppercase font-lexend cursor-pointer lg:cursor-text flex items-center justify-between">Erstellen <span class="icon-chevron-down"></span></h5>            
+            <ul class="text-gray-800 text-[13px] lg:text[11px] font-light font-inter hidden lg:block tab-content">
+              <li class="mb-3"><a href="#" title="Präsentationen">Präsentationen</a></li>
+              <li class="mb-3"><a href="#" title="Infografiken">Infografiken</a></li>
+              <li class="mb-3"><a href="#" title="Drucksachen">Drucksachen</a></li>
+              <li class="mb-3"><a href="#" title="Dokumente">Dokumente</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken für sozialen Medien">Grafiken für sozialen Medien</a></li>
+              <li class="mb-3"><a href="#" title="Grafiken">Grafiken</a></li>
+              <li class="mb-3"><a href="#" title="Videos">Videos</a></li>
+              </ul>
+          </div>
+          
+          <div class="w-full mt-6 list-six lg:mt-0 md:w-72 lg:w-64"> 
+            <h5 class="text-[13px] lg:text-[11px] text-[#bfbebe] mb-4 uppercase font-lexend">Neue Eigenschaften und Artikel</h5>
+            <img class="max-w-full rounded-md" src="img/footer/artikle.jpg" alt="">
+            <p class="text-[11px] font-light font-inter pt-3 mb-3">How IBM Uses Infographics to Attract and Hire Top Talent [Case Study]</p>
+            <p class="text-[10px] font-light font-inter pt-3" >Mehr aus unserem Blog ></p>
+          </div>
+
+        </div> 
+      </div>
+      <div class="pt-6 mx-auto subfooter max-w-7xl font-inter">
+        <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between">
+          <div class="language lg:w-[18%] mb-5 lg:mb-0">
+            <div class="relative inline-block mx-1 dropdown ">
+              <button onclick="myFunction()" class="dropbtn px-3 py-2 text-[14px] font-medium border border-[#dae4ea] rounded-md flex w-[170px] justify-between  items-center "><span class="flex items-center dropbtn"><img class="mr-[34px] lg:mr-2 dropbtn " src="img/lang.svg" alt="">Deutsch</span> <span class="icon-chevron-down-lang -mt-[3px] dropbtn"></span></button>
+              <div id="myDropdown" class="dropdown-content text-sm bg-white w-full px-2 py-2  rounded-md border border-[#dae4ea] border-b-0 rounded-b-none text-center lg:text-left">
+                
+                <a class="block py-1 mb-[3px] pl-1 hover:px-2 hover:py-1 hover:bg-[#f8fafb] transition-all" href="#">English</a>
+                <a class="block py-1 mb-[3px] pl-1 hover:px-2 hover:py-1 hover:bg-[#f8fafb] transition-all" href="#">Français</a>
+                <a class="block py-1 mb-[3px] pl-1 hover:px-2 hover:py-1 hover:bg-[#f8fafb] transition-all" href="#">Italiano</a>
+                <hr class="mt-2">
+                <p class="px-1 py-2 text-[#798297] text-sm">Currently showing</p>
+              </div>
+            </div> 
+          </div>
+          <div class="block mb-5 bottomsection lg:hidden lg:mb-0">
+            <div class="flex gap-x-3">
+              <img src="img/footer/capterra-reviews.png" alt="" class="w-[60px] h-[40px]">
+              <img src="img/footer/badge.svg" alt="" class="w-[53px]">
+            </div>
+          </div>
+          <div class="block mb-5 icons-footer lg:hidden lg:mb-0">
+            <ul class="flex items-center visme-social-footer gap-x-2">
+              <li><a href="#" class="youtube" target="_blank" ><img class="w-5 h-5 skip-lazy a3-notlazy" src="img/icons/y.svg"  loading="lazy" decoding="async"></a></li>
+              <li><a href="#" class="facebook" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/fb.svg"  loading="lazy" decoding="async"></a></li>
+              <li><a href="#" class="twitter" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/ln.svg"  alt="LinkedIn" loading="lazy" decoding="async"></a></li>
+              <li><a href="#" class="twitter" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/tx.svg" loading="lazy" decoding="async"></a></li>
+              <li><a href="#" class="google" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/inst.svg"loading="lazy" decoding="async"></a></li>
+              <li><a href="#" class="google" target="_blank"><img class="w-5 h-4 skip-lazy a3-notlazy" src="img/icons/pin.svg" loading="lazy" decoding="async"></a></li>
+              </ul>
+          </div>
+          <div class="copyright lg:w-[57%]">
+            <p class="text-[12px] text-[#a0a5b8] font-light text-center lg:text-left mb-5 lg:mb-0">
+              Copyright 2024 Easy WebContent, Inc. (DBA Visme). Alle Rechte vorbehalten. Stolz in Maryland hergestellt.
+              </p>
+          </div>
+          <div class="privacy lg:w-[25%] text-right text-[12px]">
+            <ul class="flex flex-wrap justify-center font-light lg:justify-end gap-x-2">
+              <li><a href="#">Nutzungsbedingungen <strong>(updated!)</strong></a></li>
+              <li><a href="#">Datenschutz-Bestimmungen</a></li>
+              <li><a href="#">Seitenverzeichnis</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+</html>
